@@ -2,4 +2,4 @@
 
 ## This webpage is created using HTML, CSS, Bootstrap and JavaScript 💻
 
-### [Click to view the page](bala-domtablemanipulation.netlify.app) 🚀
+### [Click to view the page](https://bala-domtablemanipulation.netlify.app/) 🚀
