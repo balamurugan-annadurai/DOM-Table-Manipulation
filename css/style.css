@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+h1{
+    font-family: "Nunito Sans", sans-serif;
+}
+.form-group{
+    display: flex;
+}
+.form-group label{
+    width: 100px;
+}
+#address{
+    resize: none;
+}
+td{
+    text-align: center;
+}
+th,td{
+    padding: 10px 10px;
+    border: 2px solid;
+}
+table{
+    border: 2px solid;
+}

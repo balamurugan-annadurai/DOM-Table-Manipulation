@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form and Table update</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container-fluid">
+        <h1 id="title" class="text-center">DOM Manipulation With Forms</h1>
+        <p id="description" class="text-center fs-5">Must enter all details to submit form!</p>
+        <!-- Form -->
+          <form action="" id="form" class="survey-form">
+               <div class="form-group d-flex justify-content-center">
+                <label for="first-name" id="name-label">First Name:</label>
+                <input type="text"  id="first-name" class="form-control w-25 mb-2" required placeholder="First name">
+               </div>
+
+               <div class="form-group d-flex justify-content-center">
+                <label for="last-name" id="name-label">Last Name:</label>
+                <input type="text" class="form-control w-25 mb-2"  id="last-name" required placeholder="Last name">
+               </div>
+
+               <div class="form-group d-flex justify-content-center">
+                <label for="email" id="email-label">Email:</label>
+                <input type="email" class="form-control w-25 mb-2"  id="email" required placeholder="Email">
+               </div>
+
+               <div class="form-group d-flex justify-content-center">
+                <label for="textaddress" >Address:</label>
+                <textarea name="" id="address" class="form-control w-25 mb-2" cols="30" rows="5" placeholder="Address"></textarea>
+               </div>
+               
+               <div class="form-group d-flex justify-content-center">
+                <label for="pincode" id="pincode-label">Pincode:</label>
+                <input type="text"  id="pincode" class="form-control w-25 mb-2" required placeholder="Pincode">
+               </div>
+
+               <div class="form-group d-flex justify-content-center">
+                <label for="gender" id="gender-label">Gender:</label>
+                <input type="text"  id="gender" class="form-control w-25 mb-2" required placeholder="Gender">
+               </div>
+
+               <div class="form-group d-flex justify-content-center">
+                <label for="state" id="state-label">State:</label>
+                <input type="text"  id="state" class="form-control w-25 mb-2" required placeholder="State">
+               </div>
+
+               <div class="form-group d-flex justify-content-center">
+                <label for="country" id="country-label">Country</label>
+                <input type="text"  id="country" class="form-control w-25 mb-2" required placeholder="Country">
+               </div>
+               
+               <p class="text-center fs-5 mt-2">Choice of food<span>(must choose atleast 2 food)</span></p>
+               <!-- Radio buttons -->
+                <div class="food-container d-flex justify-content-center">
+                    <div class="food1 form-control d-flex align-items-center flex-column">
+                        <p class="text-center">Fruits</p>
+                        <div class="form-group">
+                            <label id="fruits" for="apple">Apple</label>
+                            <input type="radio"  name="fruits"  id="apple" value="Apple">
+                        </div>
+                        <div class="form-group">
+                            <label id="fruits" for="orange">Orange</label>
+                            <input type="radio" name="fruits"  id="orange" value="Orange">
+                        </div>
+                        <div class="form-group">
+                            <label id="fruits" for="banana">Banana</label>
+                            <input type="radio" name="fruits"  id="banana" value="Banana">
+                        </div>
+                    </div>
+
+                    <div class="food2 mx-4 form-control d-flex align-items-center flex-column">
+                        <p>Vegetables</p>
+                        <div class="form-group">
+                            <label for="carrot">Carrot</label>
+                            <input type="radio" name="vegetables"  id="carrot" value="Carrot">
+                        </div>
+                        <div class="form-group">
+                            <label for="cucumber">Cucumber</label>
+                            <input type="radio" name="vegetables"  id="cucumber" value="Cucumber">
+                        </div>
+                        <div class="form-group">
+                            <label for="tomato">Tomato</label>
+                            <input type="radio" name="vegetables"  id="tomato" value="Tomato">
+                        </div>
+                    </div>
+
+                    <div class="food3 mx-4 form-control d-flex align-items-center flex-column">
+                        <p>Dairy</p>
+                        <div class="form-group">
+                            <label for="milk">Milk</label>
+                            <input type="radio" name="dairy"  id="milk" value="Milk">
+                        </div>
+                        <div class="form-group">
+                            <label for="cheese">Cheese</label>
+                            <input type="radio" name="dairy"  id="cheese" value="Cheese">
+                        </div>
+                        <div class="form-group">
+                            <label for="cream">Cream</label>
+                            <input type="radio" name="dairy"  id="cream" value="Cream">
+                        </div>
+                    </div>
+
+                    <div class="food4 mx-4 form-control d-flex align-items-center flex-column">
+                        <p>Snacks</p>
+                        <div class="form-group">
+                            <label for="popcorn">Popcorn</label>
+                            <input type="radio" name="snacks"  id="popcorn" value="Popcorn">
+                        </div>
+                        <div class="form-group">
+                            <label for="potato chips">Potato Chips</label>
+                            <input type="radio" name="snacks"  id="potato chips" value="Potato Chips">
+                        </div>
+                        <div class="form-group">
+                            <label for="pretzels">Pretzels</label>
+                            <input type="radio" name="snacks"  id="pretzels" value="Pretzels">
+                        </div>
+                    </div>
+
+                    <div class="food5 mx-4 form-control d-flex align-items-center flex-column">
+                        <p>Desserts</p>
+                        <div class="form-group">
+                            <label for="chocolate Cake">Cake</label>
+                            <input type="radio" name="desserts"  id="chocolate Cake" value="Cake">
+                        </div>
+                        <div class="form-group">
+                            <label for="ice Cream">Ice Cream</label>
+                            <input type="radio" name="desserts"  id="ice Cream" value="Ice Cream">
+                        </div>
+                        <div class="form-group">
+                            <label for="fruit Tart">Fruit Tart</label>
+                            <input type="radio" name="desserts"  id="fruit Tart" value="Fruit Tart">
+                        </div>
+                    </div>
+                </div>
+               <!-- / Radio buttons -->
+                
+               <div class="btn-container d-flex justify-content-center">
+                <button type="submit" id="submit" class="btn btn-primary mt-3 w-25" disabled>Submit</button>
+               </div> 
+            </form>
+        
+        <!-- /Form -->
+        <hr>
+        <!-- Table -->
+         <p class="text-center fs-5">Submit the form to veiw data's in Table and scroll down!</p>
+         <div class="d-flex justify-content-center mt-5">
+            <table id="table" class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th class="text-center">First name</th>
+                        <th class="text-center">Last name</th>
+                        <th class="text-center">Email</th>
+                        <th class="text-center">Address</th>
+                        <th class="text-center">Pincode</th>
+                        <th class="text-center">Gender</th>
+                        <th class="text-center">Food</th>
+                        <th class="text-center">State</th>
+                        <th class="text-center">Country</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+                
+                
+             </table>
+         </div>
+         <!-- /Table -->
+    </div>
+
+
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
